@@ -1,0 +1,23 @@
+Final Team Roster,,,,,,,,,,,,,
+#,First Name,Last Name,Role,Date of Birth (mm/dd/yyyy),T-Shirt Size,Pant Size,Dietary Restrictions,Other Dietary Restrictions/Allergies,Email (xyz@abc.com),Phone Number (123-456-7890),"Vacccination Status (Boosted, Vaccinated, Unvaccinated)",Afterparty (Y/N),Data Format Check (no action needed)
+Ex.,Example,Patel,Dancer,02/10/2004,S,M,Vegetarian,None,registration@marylandmasti.com,123-456-7890,Boosted,Yes,TRUE
+1,Elizabeth,Varghese,Dancer,08/15/2004,L,L,None,None,elizabeth_varghese@berkeley.edu,209-627-7340,Boosted,Yes,FALSE
+2,Roshni,Aradhya,Dancer,08/04/2003,M,M,Vegetarian,None,rcaradhya@berkeley.edu,925-428-1026,Boosted,Yes,TRUE
+3,Rani,Vakharia,Dancer,07/30/2006,M,M,No Red Meats,None,rani_vakharia@berkeley.edu,925-984-6639,Boosted,Yes,TRUE
+4,Amrita,Kasula,Dancer,05/28/2004,L,L,Only Chicken,None,akasula@berkeley.edu,408-680-1003,Boosted,Yes,TRUE
+5,Saee,Pole,Dancer,04/20/2005,XL,M,None,None,saeepole@berkeley.edu,408-398-1544,Boosted,Yes,TRUE
+6,Mallika,Saoji,Dancer,05/02/0205,S,S,None,None,mallikas@berkeley.edu,510-676-7631,Boosted,Yes,TRUE
+7,Anjali,Krishnan,Dancer,02/23/2006,M,M,None,None,anjalikrishnan23@berkeley.edu,661-666-3186,Boosted,Yes,TRUE
+8,Shivani,Wadhwa,Dancer,03/27/2006,M,M,Vegetarian,None,shivaniwadhwa@berkeley.edu,626-734-8264,Boosted,Yes,TRUE
+9,Priya,Bhakta,Dancer,03/07/2006,S,S,None,None,priyakb@berkeley.edu,310-425-6369,Boosted,Yes,TRUE
+10,Pahel,Tandel,Dancer,08/27/2006,M,S,No Red Meats,None,paheltandel@berkeley.edu,916-803-5669,Boosted,Yes,TRUE
+11,Amrita,Guha,Dancer,09/27/2006,M,S,None,None,guhafamily123@berkeley.edu,408-828-0924,Boosted,No,TRUE
+12,Siya,Patel,Dancer,11/24/2006,XL,S,Vegetarian,no egg,siyapatel_24@berkeley.edu,510-945-9096,Boosted,Yes,TRUE
+13,Sriya,Yenne,Dancer,04/21/2006,S,S,Vegetarian,None,sriya_yenne@berkeley.edu,408-644-8839,Boosted,Yes,TRUE
+14,Rut,Patel,Dancer,06/30/2006,M,M,No Red Meats,None,rut_patel@berkeley.edu,605-254-1513,Boosted,Yes,TRUE
+15,Tia,Patel,Dancer,12/22/2005,S,S,Vegetarian,None,tiapatel@berkeley.edu,661-706-2963,Boosted,Yes,TRUE
+16,Sanjoli,Gupta,Dancer,12/09/2006,M,M,Vegetarian,None,sanjoli@berkeley.edu,650-460-4946,Boosted,Yes,TRUE
+17,Nirali,Narayan,Dancer,11/10/2005,S,S,None,None,narayannirali@berkeley.edy,720-548-8016,Boosted,Yes,TRUE
+18,Anjali,Mittapally,Dancer,04/01/2005,M,S,None,None,anjalimitt@berkeley.edu,949-241-6584,Boosted,Yes,TRUE
+19,Krrishika,Saxena,Gopher,05/04/2006,M,S,No Red Meats,None,krrishi2006@berkeley.edu,727-455-2816,Boosted,Yes,TRUE
+20,Diya,Rajani,Gopher,10/14/2006,S,S,Only Chicken,None,d.rajani@berkeley.edu,209-777-0078,Vaccinated,Yes,TRUE

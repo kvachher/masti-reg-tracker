@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Information</title>
+</head>
+<body>
+    <h1>Select a Team</h1>
+
+    <!-- Display buttons for each team dynamically -->
+    <form action="/team_info" method="POST">
+        {% for team in team_names %}
+            <button type="submit" name="team_name" value="{{ team }}">{{ team }}</button><br><br>
+        {% endfor %}
+    </form>
+</body>
+</html>

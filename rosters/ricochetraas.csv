@@ -1,0 +1,28 @@
+Final Team Roster,,,,,,,,,,,,,
+#,First Name,Last Name,Role,Date of Birth (mm/dd/yyyy),T-Shirt Size,Pant Size,Dietary Restrictions,Other Dietary Restrictions/Allergies,Email (xyz@abc.com),Phone Number (123-456-7890),"Vacccination Status (Boosted, Vaccinated, Unvaccinated)",Afterparty (Y/N),Data Format Check (no action needed)
+Ex.,Example,Patel,Dancer,02/10/2004,S,M,Vegetarian,None,registration@marylandmasti.com,123-456-7890,Boosted,Yes,TRUE
+1,Yash,Rangwala,Captain,01/01/2003,L,L,Vegetarian,none,rangwalayj@vcu.edu,804-549-9612,Boosted,Yes,TRUE
+2,Nikitha,Manikonda,Captain,10/15/2003,L,M,No Red Meats,None,manikondan2@vcu.edu,7033469291,Boosted,Yes,FALSE
+3,Purav,Desai,Captain,03/08/2004,XL,L,Vegetarian,None,desaips@vcu.edu,510-509-4036,Boosted,Yes,TRUE
+4,Tasmaiy ,Patel,Captain,04/13/2003,L,L,Vegetarian,None,patelts4@vcu.edu,8045194961,Boosted,Yes,FALSE
+5,Parthay ,Patel,Dancer,08/20/2003,XL,L,Vegetarian,None,pparthay@gmail.com,804-467-0647,Boosted,Yes,TRUE
+6,Yashvi ,Rana,Dancer,12/11/2004,M,M,Vegetarian,None,Ranayp@vcu.edu,7038951170,Boosted,Yes,FALSE
+7,Netra ,Shah,Dancer,07/17/2005,M,S,Vegetarian,None,shahnd3@vcu.edu,8046557282,Boosted,Yes,FALSE
+8,Anvita ,Sana,Dancer,11/02/2004,L,M,Vegetarian,None,sanaa3@vcu.edu,7039014143,Boosted,Yes,FALSE
+9,Tanvi ,Potukanuma,Dancer,05/03/2006,M,S,No Red Meats,None,potukanumat@vcu.edu,4435383872,Boosted,Yes,FALSE
+10,Lavanya ,Sharma,Dancer,08/28/2006,M,M,Vegetarian,None,sharmal2@vcu.edu,7039307284,Boosted,Yes,FALSE
+11,Aarjav ,Talati,Dancer,04/30/2005,XL,XL,Vegetarian,None,talatiav@vcu.edu,8045197175,Boosted,Yes,FALSE
+12,Diya ,Patel,Dancer,02/12/2005,L,M,Vegetarian,None,pateldv3@vcu.edu,7578136262,Boosted,Yes,FALSE
+13,Niyomi ,Shah,Dancer,10/28/2003,M,M,Vegetarian,No eggs,shahnh@vcu.edu,7705960660,Boosted,No,FALSE
+14,Shivam, Jain,Dancer,07/24/2005,M,M,Vegetarian,None,jainsj@vcu.edu,7573442191,Boosted,Yes,FALSE
+15,Sneha ,Valluri,Dancer,11/14/2004,M,M,None,None,valluris@vcu.edu,5712330374,Boosted,Yes,FALSE
+16,Ishan, Patel,Dancer,10/14/2005,M,M,None,None,pateliv2@vcu.edu,7572640565,Boosted,Yes,FALSE
+17,Varsha, Korumili,Dancer,07/29/2006,M,M,No Red Meats,None,korumilliv@vcu.edu,7038266084,Boosted,Yes,FALSE
+18,Prajwal ,Puppali,Dancer,09/06/2005,M,M,No Red Meats,None,puppalipg@vcu.edu,5715283590,Boosted,Yes,FALSE
+19,Sneh ,Patel,Dancer,09/20/2002,M,M,Vegetarian,None,patels18@vcu.edu,2674907232,Boosted,Yes,FALSE
+20,Hiya,Dutia,Dancer,12/02/2004,L,M,Vegetarian,None,hiyad1202@icloud.com,5713454515,Vaccinated,Yes,FALSE
+21,Dhanush,Bearelly,Dancer,11/28/2006,M,M,No Red Meats,None,bearellyd@vcu.edu,5133993216,Boosted,Yes,FALSE
+22,,,,,,,,,,,,,FALSE
+23,,,,,,,,,,,,,FALSE
+24,,,,,,,,,,,,,FALSE
+25,,,,,,,,,,,,,FALSE
