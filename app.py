@@ -45,5 +45,5 @@ def team_info():
     team_data = get_team_info(team_name)  # Fetch data from the database
     return render_template('team_info.html', team_data=team_data, team_name=team_name)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)  # Bind to 0.0.0.0 and specify a port
