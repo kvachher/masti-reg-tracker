@@ -1,16 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-from dotenv import load_dotenv
 import sqlite3
 import os
-
-# Load environment variables from .env file (specify path if needed)
-load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 app = Flask(__name__)
 
 # Retrieve the password and secret key from environment variables
-PASSWORD = os.getenv('PASSWORD')
-app.secret_key = os.getenv('SECRET_KEY') or 'fallback-secret-key'  # Add fallback for local testing
+PASSWORD = "mm18!"
+app.secret_key = "bn7e2XubtVNA6YF3"
 
 def get_all_team_names():
     conn = sqlite3.connect('roster.db')
