@@ -16,6 +16,7 @@ def load_and_clean_data(file_path):
         'Pant Size': 'pant_size',
         'Dietary Restrictions': 'dietary_restrictions',
         'Other Dietary Restrictions/Allergies': 'other_dietary_allergies',
+        'Dancer Specified Allergies': 'dancer_allergies',
         'Email (xyz@abc.com)': 'email',
         'Phone Number (123-456-7890)': 'phone_number',
         'Vaccination Status (Boosted, Vaccinated, Unvaccinated)': 'vaccination_status',
@@ -39,7 +40,6 @@ def load_and_clean_data(file_path):
 
 
 def create_database(conn, data_columns):
-    """Drop existing table (if needed) and create a new one with correct columns."""
     cursor = conn.cursor()
     
     # Drop table to ensure schema consistency
@@ -56,7 +56,6 @@ def create_database(conn, data_columns):
 
 
 def insert_data(conn, data):
-    """Insert cleaned data into SQLite database, ignoring rows without a first and last name."""
     cursor = conn.cursor()
     columns = data.columns
     for _, row in data.iterrows():
@@ -70,7 +69,6 @@ def insert_data(conn, data):
 
 
 def calculate_team_metrics(data):
-    """Compute summary statistics for each team."""
     if data.empty:
         return {}
 
@@ -81,6 +79,7 @@ def calculate_team_metrics(data):
     shirt_size_counts = data['t_shirt_size'].value_counts().to_dict() if 't_shirt_size' in data.columns else {}
     pant_size_counts = data['pant_size'].value_counts().dropna().to_dict() if 'pant_size' in data.columns else {}
     dietary_restrictions = data['dietary_restrictions'].value_counts(dropna=False).to_dict() if 'dietary_restrictions' in data.columns else {}
+    dancer_allergies = data['dancer_allergies'].value_counts(dropna=False).to_dict() if 'dancer_allergies' in data.columns else {}
 
     metrics = {
         "team": team_name,
@@ -88,7 +87,8 @@ def calculate_team_metrics(data):
         "total_ap_count": total_ap_count,
         "shirt_size_counts": shirt_size_counts,
         "pant_size_counts": pant_size_counts,
-        "dietary_restrictions": dietary_restrictions
+        "dietary_restrictions": dietary_restrictions,
+        "dancer_allergies": dancer_allergies  # New metric
     }
     return metrics
 
@@ -115,6 +115,10 @@ def save_all_metrics_to_csv(metrics_list, output_path):
         dietary_restrictions = metrics["dietary_restrictions"]
         for restriction in sorted(dietary_restrictions.keys(), key=str):
             flat_metrics[f"Dietary - {restriction}"] = dietary_restrictions[restriction]
+
+        dancer_allergies = metrics["dancer_allergies"]
+        for allergy in sorted(dancer_allergies.keys(), key=str):
+            flat_metrics[f"Dancer Allergy - {allergy}"] = dancer_allergies[allergy]
 
         flattened_metrics.append(flat_metrics)
 

@@ -20,6 +20,7 @@
                     <th>T-Shirt Size</th>
                     <th>Pant Size</th>
                     <th>Dietary Restrictions</th>
+                    <th>Dancer Allergies</th>  <!-- New column -->
                     <th>Email</th>
                     <th>Phone Number</th>
                     <th>Vaccination Status</th>
@@ -29,18 +30,19 @@
             <tbody>
                 {% for row in team_data %}
                     <tr>
-                        <td>{{ row[0] }}</td>
-                        <td>{{ row[1] }}</td>
-                        <td>{{ row[2] }}</td>
-                        <td>{{ row[3] }}</td>
-                        <td>{{ row[4] }}</td>
-                        <td>{{ row[5] }}</td>
-                        <td>{{ row[6] }}</td>
-                        <td>{{ row[7] }}</td>
-                        <td>{{ row[8] }}</td>
-                        <td>{{ row[9] }}</td>
-                        <td>{{ row[10] }}</td>
-                        <td>{{ row[11] }}</td>
+                        <td>{{ row[0] }}</td>  <!-- id -->
+                        <td>{{ row[1] }}</td>  <!-- first_name -->
+                        <td>{{ row[2] }}</td>  <!-- last_name -->
+                        <td>{{ row[3] }}</td>  <!-- role -->
+                        <td>{{ row[4] }}</td>  <!-- date_of_birth -->
+                        <td>{{ row[5] }}</td>  <!-- t_shirt_size -->
+                        <td>{{ row[6] }}</td>  <!-- pant_size -->
+                        <td>{{ row[7] }}</td>  <!-- dietary_restrictions -->
+                        <td>{{ row[8] }}</td>  <!-- dancer_allergies -->
+                        <td>{{ row[9] }}</td>  <!-- email -->
+                        <td>{{ row[10] }}</td> <!-- phone_number -->
+                        <td>{{ row[11] }}</td> <!-- vaccination_status -->
+                        <td>{{ row[12] }}</td> <!-- afterparty -->
                     </tr>
                 {% endfor %}
             </tbody>
