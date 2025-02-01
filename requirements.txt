@@ -1,3 +1,4 @@
 Flask==2.3.2
 pandas==2.2.3
 numpy==1.26.0
+dotenv==1.0.1
