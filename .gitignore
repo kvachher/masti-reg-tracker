@@ -1,2 +1,18 @@
+# Ignore environment and credential files
 .env
 token.pickle
+service-account-key.json
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore system files
+.DS_Store
+
+# Ignore database files
+*.db
