@@ -2,7 +2,7 @@ Final Team Roster,,,,,,,,,,,,,
 #,First Name,Last Name,Role,Date of Birth (mm/dd/yyyy),T-Shirt Size,Pant Size,Dietary Restrictions,Other Dietary Restrictions/Allergies,Email (xyz@abc.com),Phone Number (123-456-7890),"Vacccination Status (Boosted, Vaccinated, Unvaccinated)",Afterparty (Y/N),Data Format Check (no action needed)
 Ex.,Example,Patel,Dancer,02/10/2004,S,M,None,None,registration@marylandmasti.com,,Boosted,Yes,FALSE
 1,Alejandro,Mateus,Dancer,05/07/2005,L,M,None,None,Alejandro.mateus@ufl.edu,9549450345,Boosted,Yes,FALSE
-2,Ansh,Shah,Props,02/24/2005,M,,Vegetarian,None,ansh.shah22405@gmail.com,407-520-4040,Boosted,Yes,TRUE
+2,Ansh,Shah,Props,02/24/2005,M,S,Vegetarian,None,ansh.shah22405@gmail.com,407-520-4040,Boosted,Yes,TRUE
 3,Arundhathi,Arun,Props,07/30/2006,M,M,No Red Meats,None,arunarundhathi2020@gmail.com,786-478-1948,Boosted,Yes,TRUE
 4,Ayami,Cole,Props,12/23/2004,S,XS,"Other, please specify",Lactose,coleayami@gmail.com,8317107216,Boosted,Yes,FALSE
 5,Heli,Bosmia,Dancer,12/20/2005,M,M,Vegetarian,None,hbosmia@ufl.edu,8635136444,Boosted,Yes,FALSE
@@ -11,17 +11,17 @@ Ex.,Example,Patel,Dancer,02/10/2004,S,M,None,None,registration@marylandmasti.com
 8,Jasmine,Siddick,Props,08/13/2004,S,S,No Red Meats,None,j.siddick@ufl.edu,3212108973,Boosted,Yes,FALSE
 9,Jeel,Patel,Dancer,05/20/2003,S,S,Vegetarian,None,jeel.patel@ufl.edu,3862495834,Boosted,Yes,FALSE
 10,Jiya,Bhatt,Props,02/09/2005,S,S,Vegetarian,None,Bhattj@ufl.edu,4073602347,Boosted,Yes,FALSE
-11,Joshua,Diedrich,Dancer,12/25/2002,L,,None,None,joshua.diedrich02@gmail.com,9048941046,Boosted,Yes,FALSE
+11,Joshua,Diedrich,Dancer/Captain,12/25/2002,M,M,None,None,joshua.diedrich02@gmail.com,9048941046,Boosted,Yes,FALSE
 12,Krish,Patel,Dancer,12/7/2003,L,M,Vegetarian,None,krishfl25@gmail.com,7724803734,Boosted,Yes,FALSE
 13,Lini,Bose,Dancer,11/3/2005,S,S,Vegetarian,None,linibose1@gmail.com,813-943-8027,Boosted,Yes,FALSE
 14,Maanas ,Kopparthi,Dancer,12/30/2004,L,M,"Other, please specify",No chickpeas,mkopparthi@gmail.com,9044857214,Boosted,Yes,FALSE
 15,Nithya,Kunta,Dancer,11/20/2004,L,S,None,None,nskunta@gmail.com,4077057682,Boosted,Yes,FALSE
 16,Param,Gattupalli,Props,05/29/2005,M,M,No Red Meats,None,paramgattupalli@ufl.edu,9049235750,Boosted,Yes,FALSE
 17,Riki,Ramesh,Dancer,06/14/2005,S,XS,Vegetarian,None,rikitha.ramesh@gmail.com,9047089850,Boosted,Yes,FALSE
-18,Rineha,Ramesh,Dancer,1/1/2023,M,S,Vegetarian,None,rineha.ramesh@ufl.edu,9048686439,Boosted,Yes,FALSE
+18,Rineha,Ramesh,Dancer/Captain,1/1/2023,M,S,Vegetarian,None,rineha.ramesh@ufl.edu,9048686439,Boosted,Yes,FALSE
 19,Rishabh,Mehta,Dancer,11/26/2004,M,S,Vegetarian,None,Mehtarishabhr@gmail.com,4079277844,Boosted,Yes,FALSE
-20,Riya,Modi,Dancer,09/21/2002,L,S,Vegetarian,None,rmodi@ufl.edu,5615421288,Boosted,Yes,FALSE
-21,Sambhav,Jha,Dancer,04/17/2004,L,,None,None,sambhavjha0417@gmail.com,9045143824,Boosted,Yes,FALSE
+20,Riya,Modi,Dancer/Captain,09/21/2002,L,S,Vegetarian,None,rmodi@ufl.edu,5615421288,Boosted,Yes,FALSE
+21,Sambhav,Jha,Dancer,04/17/2004,L,L,None,None,sambhavjha0417@gmail.com,9045143824,Boosted,Yes,FALSE
 22,Sri,Chatrathi,Dancer,07/31/2006,M,S,None,None,chatrathisri@gmail.com,9048648135,Boosted,Yes,FALSE
 23,Srila,Parikh,Dancer,09/22/2005,M,S,Vegetarian,None,srila@parikh.com,(904)-994-3085,Boosted,Yes,FALSE
 24,Neha,Sunil,Dancer,09/26/2005,S,XS,Vegetarian,None,nsunil@ufl.edu,6892033714,Boosted,Yes,FALSE
