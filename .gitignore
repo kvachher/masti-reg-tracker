@@ -2,6 +2,7 @@
 .env
 token.pickle
 service-account-key.json
+scraper.py
 
 # Ignore Node.js dependencies
 node_modules/
