@@ -3,72 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maryland Masti Login</title>
+    <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #1e1e1e; /* Neutral Dark Grey */
-            color: #e8cb0f; /* Maryland Masti Yellow */
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0a0a0a;
+            color: #00ffcc;
         }
-        .container {
-            max-width: 400px;
-            margin: auto;
-            padding: 20px;
-            background: #2c2c2c; /* Slightly lighter neutral */
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(232, 203, 15, 0.4); /* Subtle gold glow */
+        .neon-text {
+            text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
         }
-        .logo {
-            width: 150px;
-            margin: 0 auto 20px;
-        }
-        .image-placeholder {
+        .neon-button {
+            background: linear-gradient(90deg, #ff00ff, #00ffff);
+            color: #fff;
+            border: none;
+            padding: 12px;
             width: 100%;
-            height: 200px;
-            background-color: #3a3a3a; /* Dark grey placeholder */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #e8cb0f;
-            font-size: 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .neon-button:hover {
+            box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+            transform: scale(1.05);
         }
         .input-field {
-            width: 100%;
+            background: #111;
+            border: 2px solid #00ffcc;
+            color: #00ffcc;
             padding: 10px;
-            border: 2px solid #db082b; /* Red Border */
+            width: 100%;
             border-radius: 5px;
-            background: #1e1e1e; /* Neutral input field */
-            color: #e8cb0f;
             outline: none;
+            font-size: 16px;
         }
         .input-field:focus {
-            box-shadow: 0 0 5px #e8cb0f;
-        }
-        .login-button {
-            background-color: #db082b; /* Maryland Masti Red */
-            color: #ffffff;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .login-button:hover {
-            background-color: #a66c3a; /* Brown Accent */
+            box-shadow: 0 0 10px #00ffcc;
         }
     </style>
 </head>
-<body>
+<body class="flex items-center justify-center min-h-screen">
 
-    <div class="container">
-        <img src="./logos/main-logo.png" class="logo">
-
-        <form method="POST">
+    <div class="bg-black p-8 rounded-lg shadow-lg text-center max-w-sm w-full">
+        <h1 class="text-3xl font-bold neon-text mb-4">Welcome to the Club</h1>
+        
+        <form method="POST" class="flex flex-col gap-4">
             <input type="password" name="password" placeholder="Enter Password" class="input-field">
-            <button type="submit" class="login-button">Login</button>
+            <button type="submit" class="neon-button">Login</button>
         </form>
     </div>
 

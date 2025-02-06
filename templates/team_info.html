@@ -5,67 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Information - {{ team_name }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #1e1e1e;
-            color: #e8cb0f;
-            font-family: Arial, sans-serif;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0a0a0a;
+            color: #00ffcc;
             text-align: center;
         }
+        .neon-text {
+            text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+        }
         .container {
-            background: #2c2c2c;
+            background: rgba(0, 0, 0, 0.8);
             padding: 20px;
             border-radius: 10px;
+            box-shadow: 0 0 20px #00ffcc;
             width: 95%;
             max-width: 1000px;
             margin: auto;
-            box-shadow: 0 0 15px rgba(232, 203, 15, 0.4);
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background: #ffffff;
-            color: #000000;
+            background: rgba(10, 10, 10, 0.9);
             border-radius: 10px;
             overflow: hidden;
         }
         th, td {
             padding: 12px;
-            border: 2px solid #a66c3a;
+            border: 1px solid #00ffcc;
             text-align: center;
+            color: #00ffcc;
         }
         th {
-            background: #e8cb0f;
-            color: #000000;
+            background: #001f1f;
+            text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
         }
-        tr:nth-child(even) {
-            background: #f2f2f2;
+        td {
+            background: #003333;
         }
-        tr:hover {
-            background: #db082b;
-            color: #ffffff;
+        tr:hover td {
+            background: #004f4f;
+            transition: 0.3s ease-in-out;
         }
-        .button {
-            background-color: #db082b;
-            color: #ffffff;
+        .neon-button {
+            background: linear-gradient(90deg, #ff00ff, #00ffff);
+            color: #fff;
+            border: none;
             padding: 12px 20px;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: bold;
-            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
             margin-top: 20px;
-            text-decoration: none;
-            transition: background 0.3s ease-in-out;
+            display: inline-block;
         }
-        .button:hover {
-            background-color: #a66c3a;
+        .neon-button:hover {
+            box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body>
+<body class="flex items-center justify-center min-h-screen">
 
     <div class="container">
-        <h1 class="text-3xl font-bold">Team Information: {{ team_name }}</h1>
+        <h1 class="text-3xl font-bold neon-text">Team Information: {{ team_name }}</h1>
 
         {% if team_data %}
             <table>
@@ -79,25 +86,38 @@
                         <th>T-Shirt Size</th>
                         <th>Pant Size</th>
                         <th>Dietary Restrictions</th>
+                        <th>Dancer Allergies</th>
                         <th>Email</th>
                         <th>Phone Number</th>
+                        <th>Vaccination Status</th>
+                        <th>Afterparty</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for row in team_data %}
                         <tr>
-                            {% for cell in row %}
-                                <td>{{ cell }}</td>
-                            {% endfor %}
+                            <td>{{ row[0] }}</td>
+                            <td>{{ row[1] }}</td>
+                            <td>{{ row[2] }}</td>
+                            <td>{{ row[3] }}</td>
+                            <td>{{ row[4] }}</td>
+                            <td>{{ row[5] }}</td>
+                            <td>{{ row[6] }}</td>
+                            <td>{{ row[7] }}</td>
+                            <td>{{ row[8] }}</td>
+                            <td>{{ row[9] }}</td>
+                            <td>{{ row[10] }}</td>
+                            <td>{{ row[11] }}</td>
+                            <td>{{ row[12] }}</td>
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
         {% else %}
-            <p>No data found for "{{ team_name }}"</p>
+            <p class="text-red-400 text-lg">No data found for team "{{ team_name }}"</p>
         {% endif %}
 
-        <a href="/" class="button">Back to Home</a>
+        <a href="/" class="neon-button">Back to Home</a>
     </div>
 
 </body>

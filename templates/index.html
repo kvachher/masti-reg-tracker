@@ -3,60 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select a Team - Maryland Masti</title>
+    <title>Select a Team</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #1e1e1e; /* Dark Neutral */
-            color: #e8cb0f; /* Gold Accent */
-            font-family: Arial, sans-serif;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0a0a0a;
+            color: #00ffcc;
             text-align: center;
         }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: #2c2c2c;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(232, 203, 15, 0.4);
+        .neon-text {
+            text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
         }
-        .logo {
-            width: 100px;
-            margin-bottom: 15px;
-        }
-        .team-button {
-            background-color: #db082b;
-            color: #ffffff;
+        .neon-button {
+            background: linear-gradient(90deg, #ff00ff, #00ffff);
+            color: #fff;
+            border: none;
             padding: 12px;
             width: 80%;
-            margin: 10px auto;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: bold;
             text-transform: uppercase;
             cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin: 10px auto;
             display: block;
-            border: 2px solid #a66c3a;
         }
-        .team-button:hover {
-            background-color: #a66c3a;
+        .neon-button:hover {
+            box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+            transform: scale(1.05);
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00ffcc;
+            width: 90%;
+            max-width: 500px;
+            margin: auto;
         }
     </style>
 </head>
-<body>
+<body class="flex items-center justify-center min-h-screen">
 
     <div class="container">
-        <img src="./logos/side-logo.png" class="logo">
-        <h1>Select a Team</h1>
+        <h1 class="text-3xl font-bold neon-text mb-4">Select a Team</h1>
 
         <form action="/team_info" method="POST">
             {% for team in team_names %}
-                <button type="submit" name="team_name" value="{{ team }}" class="team-button">
+                <button type="submit" name="team_name" value="{{ team }}" class="neon-button">
                     {{ team }}
                 </button>
             {% endfor %}
         </form>
 
-        <a href="{{ url_for('logout') }}" class="team-button" style="background: #444;">Logout</a>
+        <a href="{{ url_for('logout') }}" class="block text-red-400 mt-4 hover:underline">
+            Logout
+        </a>
     </div>
 
 </body>
