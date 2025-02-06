@@ -4,54 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Information - {{ team_name }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #e8cb0f;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            width: 95%;
+            max-width: 1000px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(232, 203, 15, 0.4);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #ffffff;
+            color: #000000;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            border: 2px solid #a66c3a;
+            text-align: center;
+        }
+        th {
+            background: #e8cb0f;
+            color: #000000;
+        }
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        tr:hover {
+            background: #db082b;
+            color: #ffffff;
+        }
+        .button {
+            background-color: #db082b;
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+        }
+        .button:hover {
+            background-color: #a66c3a;
+        }
+    </style>
 </head>
 <body>
-    <h1>Team Information: {{ team_name }}</h1>
 
-    {% if team_data %}
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Role</th>
-                    <th>Date of Birth</th>
-                    <th>T-Shirt Size</th>
-                    <th>Pant Size</th>
-                    <th>Dietary Restrictions</th>
-                    <th>Dancer Allergies</th>  <!-- New column -->
-                    <th>Email</th>
-                    <th>Phone Number</th>
-                    <th>Vaccination Status</th>
-                    <th>Afterparty</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for row in team_data %}
+    <div class="container">
+        <h1 class="text-3xl font-bold">Team Information: {{ team_name }}</h1>
+
+        {% if team_data %}
+            <table>
+                <thead>
                     <tr>
-                        <td>{{ row[0] }}</td>  <!-- id -->
-                        <td>{{ row[1] }}</td>  <!-- first_name -->
-                        <td>{{ row[2] }}</td>  <!-- last_name -->
-                        <td>{{ row[3] }}</td>  <!-- role -->
-                        <td>{{ row[4] }}</td>  <!-- date_of_birth -->
-                        <td>{{ row[5] }}</td>  <!-- t_shirt_size -->
-                        <td>{{ row[6] }}</td>  <!-- pant_size -->
-                        <td>{{ row[7] }}</td>  <!-- dietary_restrictions -->
-                        <td>{{ row[8] }}</td>  <!-- dancer_allergies -->
-                        <td>{{ row[9] }}</td>  <!-- email -->
-                        <td>{{ row[10] }}</td> <!-- phone_number -->
-                        <td>{{ row[11] }}</td> <!-- vaccination_status -->
-                        <td>{{ row[12] }}</td> <!-- afterparty -->
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Role</th>
+                        <th>Date of Birth</th>
+                        <th>T-Shirt Size</th>
+                        <th>Pant Size</th>
+                        <th>Dietary Restrictions</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
                     </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% else %}
-        <p>No data found for team "{{ team_name }}"</p>
-    {% endif %}
-    
-    <br>
-    <a href="/">Back to Home</a>
+                </thead>
+                <tbody>
+                    {% for row in team_data %}
+                        <tr>
+                            {% for cell in row %}
+                                <td>{{ cell }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No data found for "{{ team_name }}"</p>
+        {% endif %}
+
+        <a href="/" class="button">Back to Home</a>
+    </div>
+
 </body>
 </html>

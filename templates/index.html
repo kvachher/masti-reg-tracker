@@ -3,16 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Information</title>
+    <title>Select a Team - Maryland Masti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #1e1e1e; /* Dark Neutral */
+            color: #e8cb0f; /* Gold Accent */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: #2c2c2c;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(232, 203, 15, 0.4);
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        .team-button {
+            background-color: #db082b;
+            color: #ffffff;
+            padding: 12px;
+            width: 80%;
+            margin: 10px auto;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: block;
+            border: 2px solid #a66c3a;
+        }
+        .team-button:hover {
+            background-color: #a66c3a;
+        }
+    </style>
 </head>
 <body>
-    <h1>Select a Team</h1>
 
-    <!-- Display buttons for each team dynamically -->
-    <form action="/team_info" method="POST">
-        {% for team in team_names %}
-            <button type="submit" name="team_name" value="{{ team }}">{{ team }}</button><br><br>
-        {% endfor %}
-    </form>
+    <div class="container">
+        <img src="./logos/side-logo.png" class="logo">
+        <h1>Select a Team</h1>
+
+        <form action="/team_info" method="POST">
+            {% for team in team_names %}
+                <button type="submit" name="team_name" value="{{ team }}" class="team-button">
+                    {{ team }}
+                </button>
+            {% endfor %}
+        </form>
+
+        <a href="{{ url_for('logout') }}" class="team-button" style="background: #444;">Logout</a>
+    </div>
+
 </body>
 </html>
