@@ -6,6 +6,8 @@ from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaIoBaseDownload
 from google.oauth2.credentials import Credentials
 from dotenv import load_dotenv
+from google.auth.transport.requests import Request
+
 
 # Load environment variables
 load_dotenv()

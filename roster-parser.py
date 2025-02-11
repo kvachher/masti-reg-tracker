@@ -147,9 +147,9 @@ def main():
         for file_path in csv_files:
             data = load_and_clean_data(file_path)
 
-            if data.empty:
-                print(f"Skipping {file_path} (No valid entries).")
-                continue
+            # if data.empty:
+                # print(f"Skipping {file_path} (No valid entries).")
+                # continue
 
             insert_data(conn, data)
             metrics = calculate_team_metrics(data)
