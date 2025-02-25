@@ -64,7 +64,7 @@ def insert_data(conn, data):
         INSERT INTO roster ({", ".join([f'"{col}"' for col in columns if col != 'id'])})
         VALUES ({placeholders})
         '''
-        cursor.execute(insert_query, tuple(row.drop('id').fillna('')))  # Convert NaN to ''
+        cursor.execute(insert_query, tuple(row.drop('id').fillna('')))
     conn.commit()
 
 
@@ -128,7 +128,7 @@ def save_all_metrics_to_csv(metrics_list, output_path):
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__)) 
-    rosters_dir = os.path.join(base_dir, "rosters")
+    rosters_dir = os.path.join(base_dir, "scraper/rosters")
     db_path = os.path.join(base_dir, "roster.db")
     output_csv = os.path.join(base_dir, "team_metrics.csv")
 
@@ -146,10 +146,6 @@ def main():
 
         for file_path in csv_files:
             data = load_and_clean_data(file_path)
-
-            # if data.empty:
-                # print(f"Skipping {file_path} (No valid entries).")
-                # continue
 
             insert_data(conn, data)
             metrics = calculate_team_metrics(data)
